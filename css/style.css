@@ -453,16 +453,274 @@ summary::-webkit-details-marker {
       width: calc(33.33 - 20px);
       margin-left: 20px; } }
 
-.Common__paragraphTitle {
-  font-size: 20px;
-  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-  font-weight: 600;
-  font-style: normal; }
+.TechBlogDetail .TechBlogDetail__container {
+  display: flex;
+  max-width: 1180px;
+  padding: 50px 20px;
+  margin: 0 auto; }
+  .TechBlogDetail .TechBlogDetail__container .TechBlogDetail__contents {
+    width: 70%;
+    padding-right: 6%; }
+    .TechBlogDetail .TechBlogDetail__container .TechBlogDetail__contents .TechBlogDetail__contentsHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .TechBlogDetail .TechBlogDetail__container .TechBlogDetail__contents .TechBlogDetail__contentsHeader .TechBlogDetail__articleDate {
+        color: #8C8C93;
+        font-size: 16px; }
+    .TechBlogDetail .TechBlogDetail__container .TechBlogDetail__contents .TechBlogDetail__articleTitle {
+      color: #333;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: calc(41 / 24);
+      margin-bottom: 20px; }
+    .TechBlogDetail .TechBlogDetail__container .TechBlogDetail__contents .TechBlogDetail__articleEyeCatch {
+      border: 1px solid #333;
+      margin-bottom: 20px; }
+      .TechBlogDetail .TechBlogDetail__container .TechBlogDetail__contents .TechBlogDetail__articleEyeCatch img {
+        display: block;
+        width: 100%; }
 
 @media (max-width: 768px) {
-  .Common__paragraphTitle {
-    font-size: 1em;
-    line-height: 1.6; } }
+  .TechBlogDetail .TechBlogDetail__container .TechBlogDetail__contents {
+    padding-right: 0; } }
+
+.TechBlogTags .TechBlogTags__container {
+  display: flex;
+  max-width: 1180px;
+  padding: 50px 20px;
+  margin: 0 auto; }
+  .TechBlogTags .TechBlogTags__container .TechBlogTags__contents {
+    width: 70%;
+    padding-right: 6%; }
+    .TechBlogTags .TechBlogTags__container .TechBlogTags__contents .TechBlogTags__contentsTitle {
+      color: #333;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 20px; }
+
+@media (max-width: 768px) {
+  .TechBlogTags .TechBlogTags__container {
+    padding-top: 10px; }
+    .TechBlogTags .TechBlogTags__container .TechBlogTags__contents {
+      padding-right: 0; } }
+
+.TechBlog .TechBlog__container {
+  display: flex;
+  max-width: 1180px;
+  padding: 50px 20px;
+  margin: 0 auto; }
+  .TechBlog .TechBlog__container .TechBlog__contentsList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: -30px;
+    padding-right: 6%; }
+    .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem {
+      width: calc(50% - 30px);
+      margin-left: 30px;
+      margin-bottom: 80px; }
+      .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem a {
+        display: block; }
+        .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem a:hover .TechBlog__itemImage img {
+          transform: scale(1.05);
+          transition-duration: 0.5s; }
+        .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem a:hover .TechBlog__itemImage::before {
+          background-color: rgba(0, 0, 0, 0.1); }
+        .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem a:hover .TechBlog__itemDate {
+          opacity: .6; }
+        .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem a:hover .TechBlog__itemTitle {
+          opacity: .6; }
+      .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem .TechBlog__itemImage {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #333;
+        margin-bottom: 20px; }
+        .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem .TechBlog__itemImage img {
+          display: block;
+          transition-duration: 0.3s; }
+        .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem .TechBlog__itemImage::before {
+          width: 100%;
+          height: 100%;
+          content: "";
+          display: block;
+          background-color: rgba(0, 0, 0, 0);
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          transition: .3s; }
+      .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem .TechBlog__itemDate {
+        color: #8C8C93;
+        font-size: 14px;
+        transition-duration: 0.5s; }
+      .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem .TechBlog__itemTitle {
+        color: #333;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transition-duration: 0.5s; }
+
+@media (max-width: 768px) {
+  .TechBlog .TechBlog__container .TechBlog__contentsList {
+    padding-right: 0; }
+    .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem {
+      margin-bottom: 50px; } }
+
+@media (max-width: 450px) {
+  .TechBlog .TechBlog__container {
+    padding-top: 0; }
+    .TechBlog .TechBlog__container .TechBlog__contentsList {
+      margin-left: 0; }
+      .TechBlog .TechBlog__container .TechBlog__contentsList .TechBlog__contentsItem {
+        width: 100%;
+        margin-left: 0; } }
+
+.TechBlogHeader .TechBlogHeader__title {
+  width: 70%;
+  max-width: 700px;
+  padding: 20px;
+  margin: 0 auto; }
+
+@media (max-width: 450px) {
+  .TechBlogHeader .TechBlogHeader__title {
+    width: 75%;
+    padding: 15px; } }
+
+.Common__article {
+  margin-bottom: 30px; }
+  .Common__article h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px; }
+  .Common__article h3 {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .Common__article h4 {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .Common__article p {
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: calc(27 / 16);
+    margin-bottom: 10px; }
+
+.Common__articleFooter {
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070; }
+  .Common__articleFooter .Common__snsContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px 0; }
+    .Common__articleFooter .Common__snsContainer .Common__snsTitle {
+      color: #333;
+      font-size: 14px;
+      font-weight: bold;
+      margin-right: 10px; }
+    .Common__articleFooter .Common__snsContainer .Common__snsSplit {
+      color: #333;
+      margin-right: 15px; }
+    .Common__articleFooter .Common__snsContainer .Common__snsLists {
+      display: flex;
+      align-items: center;
+      margin-left: -15px; }
+      .Common__articleFooter .Common__snsContainer .Common__snsLists .Common__snsItem {
+        margin-left: 15px; }
+
+.Common__articleLists .Common__articleItem {
+  display: flex;
+  margin-bottom: 40px; }
+  .Common__articleLists .Common__articleItem:hover .Common__articleThumbnail img {
+    transform: scale(1.05);
+    transition-duration: 0.5s; }
+  .Common__articleLists .Common__articleItem:hover .Common__articleThumbnail::before {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .Common__articleLists .Common__articleItem:hover .Common__articleDate,
+  .Common__articleLists .Common__articleItem:hover .Common__articleTitle {
+    opacity: .6; }
+  .Common__articleLists .Common__articleItem .Common__articleThumbnail {
+    width: 30%;
+    position: relative;
+    display: block;
+    border: 1px solid #333;
+    margin-right: 3%;
+    overflow: hidden;
+    height: fit-content; }
+    .Common__articleLists .Common__articleItem .Common__articleThumbnail img {
+      display: block;
+      width: 100%;
+      transition-duration: 0.3s; }
+    .Common__articleLists .Common__articleItem .Common__articleThumbnail::before {
+      width: 100%;
+      height: 100%;
+      content: "";
+      display: block;
+      background-color: rgba(0, 0, 0, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      transition: .3s; }
+  .Common__articleLists .Common__articleItem .Common__articleBody {
+    width: 70%; }
+    .Common__articleLists .Common__articleItem .Common__articleBody .Common__articleLink {
+      display: block; }
+      .Common__articleLists .Common__articleItem .Common__articleBody .Common__articleLink .Common__articleDate {
+        color: #8C8C93;
+        font-size: 14px;
+        font-weight: 500; }
+      .Common__articleLists .Common__articleItem .Common__articleBody .Common__articleLink .Common__articleTitle {
+        color: #333;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: calc(30 / 20);
+        margin-top: 5px;
+        margin-bottom: 10px; }
+
+@media (max-width: 768px) {
+  .Common__articleLists .Common__articleItem {
+    display: block; }
+    .Common__articleLists .Common__articleItem .Common__articleThumbnail {
+      width: 100%;
+      margin-bottom: 10px; }
+    .Common__articleLists .Common__articleItem .Common__articleBody {
+      width: 100%; } }
+
+.Common__blogTags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px; }
+  .Common__blogTags .Common__blogTagsItem {
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: fit-content; }
+    .Common__blogTags .Common__blogTagsItem a {
+      display: block;
+      color: #333;
+      font-size: 14px;
+      padding: 8px; }
+      .Common__blogTags .Common__blogTagsItem a:hover {
+        background: #F3CA20;
+        color: #fff; }
+        .Common__blogTags .Common__blogTagsItem a:hover span {
+          color: #fff; }
+      .Common__blogTags .Common__blogTagsItem a span {
+        color: #F3CA20;
+        margin-right: 3px; }
 
 .Common__button {
   display: inline-block;
@@ -559,6 +817,26 @@ summary::-webkit-details-marker {
     font-size: .8em;
     line-height: 1.9; } }
 
+.Common__paragraphTitle {
+  font-size: 20px;
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  font-weight: 600;
+  font-style: normal; }
+
+@media (max-width: 768px) {
+  .Common__paragraphTitle {
+    font-size: 1em;
+    line-height: 1.6; } }
+
+.Common__relatePosts {
+  margin-top: 50px; }
+  .Common__relatePosts .Common__relatePostsTitle {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px; }
+
 .Common__sectionTitle {
   position: relative;
   font-size: 32px;
@@ -581,3 +859,34 @@ summary::-webkit-details-marker {
     .Common__sectionTitle span {
       top: -1.6em;
       font-size: .5em; } }
+
+.TechBlog__sidebar {
+  width: 30%;
+  min-width: 300px; }
+  .TechBlog__sidebar .TechBlog__sidebarSection {
+    margin-bottom: 50px; }
+    .TechBlog__sidebar .TechBlog__sidebarSection .TechBlog__sidebarTitle {
+      color: #333;
+      font-size: 20px;
+      font-weight: bold;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 10px; }
+    .TechBlog__sidebar .TechBlog__sidebarSection .TechBlog__newPostsLists .TechBlog__newPostsItem a {
+      display: block; }
+      .TechBlog__sidebar .TechBlog__sidebarSection .TechBlog__newPostsLists .TechBlog__newPostsItem a:hover .TechBlog__newPostsDate,
+      .TechBlog__sidebar .TechBlog__sidebarSection .TechBlog__newPostsLists .TechBlog__newPostsItem a:hover .TechBlog__newPostsTitle {
+        opacity: .6; }
+    .TechBlog__sidebar .TechBlog__sidebarSection .TechBlog__newPostsLists .TechBlog__newPostsItem .TechBlog__newPostsDate {
+      color: #8C8C93;
+      font-size: 12px; }
+    .TechBlog__sidebar .TechBlog__sidebarSection .TechBlog__newPostsLists .TechBlog__newPostsItem .TechBlog__newPostsTitle {
+      color: #333;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-top: 7px;
+      margin-bottom: 15px; }
+
+@media (max-width: 768px) {
+  .TechBlog__sidebar {
+    display: none; } }

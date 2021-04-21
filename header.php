@@ -21,23 +21,29 @@
     <?php wp_head(); ?>
   </head>
   <body>
+<?php if( ! is_page('tech') && ! is_tax('tag_tech') && ! is_singular( 'tech-blog' ) ): ?>
     <div class="Header js-firstView-01">
       <div class="Header__inner"> 
         <h1 class="Header__logo"> <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/Common/logo.png" alt="稲沢・一宮のホームページ制作ならフキダシ"></a></h1>
         <nav class="Header__navi">
           <ul class="Header__naviList">
-<?php if(is_front_page()): ?>
+  <?php if(is_front_page()): ?>
             <li class="Header__naviMenu"> <a href="#aboutus">私たちについて</a></li>
             <li class="Header__naviMenu"> <a href="#service">私たちにできること</a></li>
             <li class="Header__naviMenu"> <a href="#price">料金</a></li>
-<?php else: ?>
+  <?php else: ?>
             <li class="Header__naviMenu"> <a href="<?php echo home_url('/#aboutus'); ?>">私たちについて</a></li>
             <li class="Header__naviMenu"> <a href="<?php echo home_url('/#service'); ?>">私たちにできること</a></li>
             <li class="Header__naviMenu"> <a href="<?php echo home_url('/#price'); ?>">料金</a></li>
-<?php endif; ?>
+  <?php endif; ?>
             <li class="Header__naviMenu"> <a href="<?php echo home_url('/contact'); ?>">お問い合わせ</a></li>
           </ul>
         </nav>
         <div class="Header__humbager"></div>
       </div>
     </div>
+<?php else: ?>
+    <div class="TechBlogHeader"> 
+      <h1 class="TechBlogHeader__title"><a href="<?php echo home_url('/tech'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/TechBlog/TechBlog__title.png" alt="フキダシ　テックブログ"></a></h1>
+    </div>
+<?php endif; ?>
