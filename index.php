@@ -20,13 +20,13 @@
         <h2 class="Common__sectionTitle"><span>SERVICE </span>私たちにできること</h2>
         <div class="IndexService__contentsContainer">
           <div class="IndexService__contentsList">
-            <div class="IndexService__contents"><img src="<?php echo get_template_directory_uri(); ?>/img/Index/service01.png">
+            <div class="IndexService__contents"><img src="<?php echo get_template_directory_uri(); ?>/img/Index/service01.png" alt="新しくお店を始めるので集客したい">
               <h3 class="Common__paragraph futo-go">新しくお店を始めるので<br class="-sp">集客したい</h3>
             </div>
-            <div class="IndexService__contents"><img src="<?php echo get_template_directory_uri(); ?>/img/Index/service02.png">
+            <div class="IndexService__contents"><img src="<?php echo get_template_directory_uri(); ?>/img/Index/service02.png" alt="今あるホームページをリニューアルしたい">
               <h3 class="Common__paragraph futo-go">今あるホームページを<br class="-sp">リニューアルしたい</h3>
             </div>
-            <div class="IndexService__contents"><img src="<?php echo get_template_directory_uri(); ?>/img/Index/service03.png">
+            <div class="IndexService__contents"><img src="<?php echo get_template_directory_uri(); ?>/img/Index/service03.png" alt="ホームページの更新をまかせたい">
               <h3 class="Common__paragraph futo-go">ホームページの更新を<br class="-sp">まかせたい</h3>
             </div>
           </div>
